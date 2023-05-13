@@ -1,4 +1,4 @@
 function Panel(){
-    return <div> Panel </div>
+    return <div className="text-3xl font-bold underline"> Panel </div>
 }
 export default Panel;
