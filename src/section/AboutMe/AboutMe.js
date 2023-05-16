@@ -3,7 +3,7 @@ import { aboutMe } from "./constants";
 
 function AboutMe(){
     return(
-        <Panel title="About me" body={aboutMe}/>
+        <Panel title="ABOUT ME" body={aboutMe}/>
     )
 };
 

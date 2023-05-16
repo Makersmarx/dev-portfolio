@@ -2,9 +2,7 @@ import Panel from "../components/Panel";
 
 function Contact(){
     return (
-        <Panel>
-
-        </Panel>
+        <Panel title="Placeholder for Contact section"/>
     )
 }
 export default Contact;
