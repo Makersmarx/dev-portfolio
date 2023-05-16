@@ -1,4 +1,4 @@
-import AboutMe from "./section/AboutMe";
+import AboutMe from "./section/AboutMe/AboutMe";
 import Contact from "./section/Contact";
 import Projects from "./section/Projects";
 import Skills from "./section/Skills";
