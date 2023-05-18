@@ -13,6 +13,6 @@ function Panel(props){
         
     </div>
     )
-}   
+}     
     
 export default Panel;

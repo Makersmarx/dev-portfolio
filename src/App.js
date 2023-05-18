@@ -1,9 +1,7 @@
 import AboutMe from "./section/AboutMe/AboutMe";
-import Contact from "./section/Contact";
 import Projects from "./section/Projects";
 import Skills from "./section/Skills";
 import Testimonials from "./section/Testimonials";
-import Card from "./components/Card";
 
 function App() {
   return (
@@ -12,8 +10,6 @@ function App() {
       <Skills/>
       <Projects/>
       <Testimonials/>
-      <Contact/>
-      <Card/>
     </div>
   )
 }

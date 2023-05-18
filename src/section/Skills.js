@@ -4,7 +4,6 @@ import Tile from "../components/Tile";
 function Skills(){
     return (
         <Panel>
-            <Tile></Tile>
         </Panel>
     )
 }
