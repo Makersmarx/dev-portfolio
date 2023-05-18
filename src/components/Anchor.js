@@ -1,6 +1,7 @@
 import classNames from "classnames";
 
-function Anchor ({ 
+function Anchor ({
+    href, 
     children, 
     className, 
     ...rest 
@@ -11,7 +12,7 @@ function Anchor ({
         className
     );
     return (
-        <p className={anchorClassNames}>{children} </p>
+        <a href={href} className={anchorClassNames}>{children} </a>
     )
 }
 export default Anchor

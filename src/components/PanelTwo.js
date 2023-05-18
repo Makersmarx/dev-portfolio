@@ -6,7 +6,7 @@ function PanelTwo({
     ...rest}){
         
     const panelClassNames = classNames(
-        'w-full h-fit  bg-slate-100 border border-white border-4',
+        'w-full h-fit  bg-slate-100 border border-white border-4 ',
         className
     );
     return (
