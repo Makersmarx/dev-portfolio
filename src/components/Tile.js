@@ -1,6 +1,6 @@
 import classNames from "classnames";
 
-function Tile(props){
+function Tile({ skill }){
         // const skillTileClassNames = classNames(
         //         'bg-slate-200 text-gray-500 rounded-md p-1 m-1 inline-block',
         //         className
@@ -8,7 +8,7 @@ function Tile(props){
    
     return (
         <div className='bg-slate-200 text-gray-500 rounded-md p-1 m-1 inline-block'>
-            <span>{props.skill}</span>
+            <span>{skill}</span>
         </div>
     )
 }
