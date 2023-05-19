@@ -32,6 +32,7 @@ function Projects(){
                     <Media alt='cute kitten' src={media}/>
                 </Card>
                 <Card>
+                    <Subtitles>My Cat App</Subtitles>
                     <Info>{paragraph1}</Info>
                     <Info>{paragraph2}</Info>
                     <Info>{paragraph3}</Info>
