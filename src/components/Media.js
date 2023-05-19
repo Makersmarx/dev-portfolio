@@ -1,7 +1,6 @@
 import classNames from "classnames"
 
 function Media({
-    type,
     src,
     alt, 
     children,
@@ -9,16 +8,30 @@ function Media({
     ...rest
 }){
     const finalMediaClassNames = classNames(
-        'w-9/12 max-w-md',
+        'w-9/12 max-w-md mb-4 rounded-lg',
         className
     )
-    return (
-        <div className='flex justify-center'>
-            {type === 'video/mp4' ? (<video controls><source src={src} type='video/mp4'>Your browser does not support this video type.</source></video>) 
-            // Look into video library, only supporting MP4 and ogg is very limiting. 
-            : (<img src={src} alt={alt} className={finalMediaClassNames} />)}        
+    const isVideo = src.endsWith('.mp4') || src.endsWith('.webm') || src.endsWith('.ogg') || src.endsWith('.MOV');
+    
+    if (isVideo) {
+        return(
+        <div className="flex justify-center">
+            <video className={finalMediaClassNames} controls>
+                <source src={src} type="video/mp4" />
+                <source src={src} type="video/webm" />
+                <source src={src} type="video/ogg" />
+                <source src={src} type="video/MOV" />
+                Your browser does not support the video tag.
+            </video>
         </div>
+       
+        );
+    }
+        return (
+            <div className="flex justify-center">
+                <img src={src} alt={alt} className={finalMediaClassNames} />
+            </div>
+        )
         
-    )
 }
 export default Media;
