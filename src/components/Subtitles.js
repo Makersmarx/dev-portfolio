@@ -9,7 +9,7 @@ function Subtitles({
             className
     )
     const lineClassNames = classNames(
-        'h-1 w-48 mx-auto my-4 rounded bg-amber-300 text-center',
+        'h-1 w-24 mx-auto my-4 rounded bg-amber-300 text-center',
         className
     )
     return (
