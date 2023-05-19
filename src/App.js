@@ -8,7 +8,6 @@ function App() {
   return (
     <div>
       <AboutMe/>
-      <Skills/>
       <Projects/>
       <Testimonials/>
       <Contact/>

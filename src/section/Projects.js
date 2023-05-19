@@ -1,5 +1,6 @@
 import Card from "../components/Card";
 import Panel from "../components/Panel";
+import Titles from "../components/Title";
 import Subtitles from '../components/Subtitles'
 import Button from '../components/Button'
 import Info from "../components/Info";
@@ -24,7 +25,7 @@ function Projects(){
 
     return (
         <Panel>
-            <Subtitles> MY PROJECTS </Subtitles>
+            <Titles> MY PROJECTS </Titles>
             <Intro>{intro1}</Intro>
             <div className='flex flex-row'>
                 <Card>
