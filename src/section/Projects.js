@@ -31,7 +31,7 @@ function Projects(){
                 <Card>
                     <Media alt='cute kitten' src={media}/>
                 </Card>
-                <Card>
+                <Card className='justify-start mr-32'>
                     <Subtitles>My Cat App</Subtitles>
                     <Info>{paragraph1}</Info>
                     <Info>{paragraph2}</Info>

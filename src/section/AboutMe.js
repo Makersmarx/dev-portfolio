@@ -18,7 +18,7 @@ import Skills from "./Skills";
             <Titles>ABOUT ME</Titles>
             <Intro>{intro1}</Intro>
             <div className="flex flex-row">
-                <Card>
+                <Card className=''>
                     <Subtitles>Get to know me!</Subtitles>
                     <Info>{paragraph1}</Info>
                     <Info>{paragraph2}</Info>

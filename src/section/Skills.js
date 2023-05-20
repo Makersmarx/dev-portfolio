@@ -11,7 +11,7 @@ function Skills(){
     return (
         <div>
             <Subtitles>My Skills</Subtitles>
-            {skillToRender}
+            <div className="flex flex-wrap">{skillToRender}</div>
         </div>
         
         
