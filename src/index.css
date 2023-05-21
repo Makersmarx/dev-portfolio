@@ -5,7 +5,8 @@
 @import "tailwindcss/utilities";
 
 body{
-    font-family: Mulish;
+    font-family: Source Sans Pro;
+    color: #111111;
     margin: 0px;
 }
 button > svg {

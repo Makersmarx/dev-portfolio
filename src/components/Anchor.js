@@ -8,7 +8,7 @@ function Anchor ({
 }){
     const anchorClassNames = classNames(
         // Consistant styling
-        'text-amber-300 underline font-bold hover:underline-offset-4 focus:ring focus:ring-amber-300',
+        'text-cyan-500 underline font-bold hover:underline-offset-4 focus:ring focus:ring-cyan-300',
         className
     );
     return (

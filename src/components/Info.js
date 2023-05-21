@@ -5,11 +5,11 @@ function Info({
     className, 
     ...rest }){
     const paragraphClassNames = classNames(
-            'text-1xl m-2 pt-4 space-y-4 flex',
+            'text-1xl p-2',
             className
         )
     return (
-        <p className={paragraphClassNames}>
+        <p {...rest} className={paragraphClassNames}>
            {children} 
         </p>
     )

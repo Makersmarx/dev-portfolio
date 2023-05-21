@@ -1,6 +1,6 @@
 import classNames from "classnames";
 
-function Titles({
+function SectionTitles({
     children, 
     className, 
     ...rest}){
@@ -9,7 +9,7 @@ function Titles({
             className
     )
     const lineClassNames = classNames(
-        'h-1 w-8 mx-auto my-4 rounded bg-amber-300 text-center',
+        'h-1 w-8 mx-auto my-4 rounded bg-gradient-to-r from-cyan-500 to-blue-500" text-center',
         className
     )
     return (
@@ -20,4 +20,4 @@ function Titles({
             
         )
 }
-export default Titles;
+export default SectionTitles;
