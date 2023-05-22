@@ -8,7 +8,7 @@ function Media({
     ...rest
 }){
     const finalMediaClassNames = classNames(
-        'w-9/12 max-w-xl mb-4 rounded-lg border border-8 border-cyan-400 relative drop-shadow-lg',
+        'w-9/12 max-w-xl mb-4 rounded-lg border border-8 border-amber-300 relative drop-shadow-lg',
         className
     )
     const isVideo = src.endsWith('.mp4') || src.endsWith('.webm') || src.endsWith('.ogg') || src.endsWith('.MOV');
