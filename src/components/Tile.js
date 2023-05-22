@@ -7,7 +7,7 @@ function Tile({ skill }){
         //     )
    
     return (
-        <div className='bg-slate-200 text-gray-500 rounded-md p-1 m-1 inline-block'>
+        <div className='bg-slate-200 text-gray-500 rounded-md p-1 m-1 inline-block drop-shadow-lg'>
             <span>{skill}</span>
         </div>
     )

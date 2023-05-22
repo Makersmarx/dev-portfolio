@@ -1,34 +1,45 @@
 import { useState } from 'react';
-import Button from './Button';
+import { HiChevronDoubleLeft, HiChevronDoubleRight } from "react-icons/hi";
 
 function ImageSlider(){
-    const [currentImgIndx, setCurrentImgIndx] = useState(0);
+    const [currentTestimonialIndx, setCurrentTestimonialIndx] = useState(0);
 
-    const images = [
-        ''
+    const testimonials = [
+        {
+            image:'https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/06/06/15/Chris-Pratt.jpg',
+            name:'Chris Pratt',
+            quote:`You ladies rule! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
+        },
+        {
+            image:'https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/27/08/jennifer-lawrence.jpg',
+            name:'Jennifer Lawrence',
+            quote:`Let the games begin! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
+        },
     ]
-    
+
     const prev = () => {
         const newIndx = 
-        (currentImgIndx - 1 + images.length) % images.length;
-        setCurrentImgIndx(newIndx);
+        (currentTestimonialIndx - 1 + testimonials.length) % testimonials.length;
+        setCurrentTestimonialIndx(newIndx);
     };
 
     const next = () => {
-        const newIndx = (currentImgIndx + 1) % images.length;
-        setCurrentImgIndx(newIndx);
+        const newIndx = (currentTestimonialIndx + 1) % testimonials.length;
+        setCurrentTestimonialIndx(newIndx);
     };
+    const currentTestimonial = testimonials[currentTestimonialIndx];
 
     return (
         <div className='relative'>
-            <img 
-            src= {images[currentImgIndx]}
-            alt= 'Slider Image'
-            className = 'object-cover w-full h-full' />
-            <div className='flex flex-row'>
-                <Button onClick={prev}>PREV</Button>
-                <Button onClick={next}>NEXT</Button>
-            </div> 
+            <div key={currentTestimonialIndx} className='flex place-content-around'>
+                <HiChevronDoubleLeft onClick={prev} className='text-4xl mt-8'/>
+                <div className='flex justify-center items-center w-5/6 mb-8 drop-shadow-lg bg-gray-50 rounded-full p-4'>
+                  <img src={currentTestimonial.image} alt={currentTestimonial.name} className="rounded-full w-24" />
+                  <p className="text-left ml-8">{currentTestimonial.quote}</p>  
+                </div>
+                
+                <HiChevronDoubleRight onClick={next} className='text-4xl mt-8'/>
+            </div>
         </div>
     );
 };

@@ -5,11 +5,9 @@ import SectionTitles from "../components/SectionTitles";
 
 function Testimonials (){
     return (
-        <Panel className='bg-gray-50'>
+        <Panel>
             <SectionTitles> TESTIMONIALS</SectionTitles>
-            <Card className='flex justify-center'>
-               <ImageSlider></ImageSlider> 
-            </Card>
+               <ImageSlider />
         </Panel>
     )
 }
