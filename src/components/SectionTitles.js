@@ -9,7 +9,7 @@ function SectionTitles({
             className
     )
     const lineClassNames = classNames(
-        'h-1 w-8 mx-auto my-4 rounded bg-gradient-to-r from-cyan-500 to-blue-500" text-center',
+        'h-1 w-8 mx-auto my-4 rounded bg-gradient-to-r from-amber-300 to-yellow-300" text-center',
         className
     )
     return (
