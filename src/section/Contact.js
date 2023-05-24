@@ -30,7 +30,7 @@ function Contact(){
         <Panel className='bg-gray-50 flex flex-col justify-center place-content-center'>
             <SectionTitles>CONTACT</SectionTitles>
                 <Info className='flex justify-center text-center'>{contactIntro}</Info> 
-                <Card className='bg-white rounded-lg translate-x-2/4'>
+                <Card className='bg-white rounded-lg md:translate-x-2/4'>
                     <h1 className='tracking-widest text-lg p-2 font-bold'>NAME</h1>
                     <input
                     placeholder="Enter Your Name "

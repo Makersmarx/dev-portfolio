@@ -5,7 +5,7 @@ function Info({
     className, 
     ...rest }){
     const paragraphClassNames = classNames(
-            'text-1xl p-2',
+            'text-base md:text-1xl md:p-2',
             className
         )
     return (

@@ -32,13 +32,13 @@ function ImageSlider(){
     return (
         <div className='relative'>
             <div key={currentTestimonialIndx} className='flex place-content-around'>
-                <HiChevronDoubleLeft onClick={prev} className='text-4xl mt-8'/>
-                <div className='flex justify-center items-center w-5/6 mb-8 drop-shadow-lg bg-gray-50 rounded-full p-4'>
+                <HiChevronDoubleLeft onClick={prev} className='text-3xl md:text-4xl md:mt-8'/>
+                <div className='flex flex-col md:flex-row justify-center items-center w-5/6 mb-8 drop-shadow-lg bg-gray-50 rounded-md md:rounded-full md:p-4'>
                   <img src={currentTestimonial.image} alt={currentTestimonial.name} className="rounded-full w-24" />
-                  <p className="text-left ml-8">{currentTestimonial.quote}</p>  
+                  <p className="text-left ml-8 text-ellipsis ">{currentTestimonial.quote}</p>  
                 </div>
                 
-                <HiChevronDoubleRight onClick={next} className='text-4xl mt-8'/>
+                <HiChevronDoubleRight onClick={next} className='text-3xl md:text-4xl md:mt-8'/>
             </div>
         </div>
     );

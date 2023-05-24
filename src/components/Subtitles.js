@@ -5,7 +5,7 @@ function Subtitles({
     className, 
     ...rest}){
     const subTitleClassNames = classNames(
-            'text-2xl font-bold text-left m-2 pt-4 tracking-wide',
+            'text-xl md:text-2xl font-bold text-left md: =m-2 md:pt-4 tracking-wide',
             className
     )
 
