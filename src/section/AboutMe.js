@@ -15,7 +15,7 @@ import Subtitles from "../components/Subtitles";
     return(
         <Panel className='bg-gray-50'>
             <SectionTitles>ABOUT ME</SectionTitles>
-            <Info className='flex justify-center text-center'>{intro1}</Info>
+            <Info className='flex justify-center text-center ml-10 mr-10 md:text-xl md:ml-46 md:mr-46 xl:ml-56 xl:mr-56'>{intro1}</Info>
             <div className="flex flex-col md:flex-row">
                 <Card className=''>
                     <Subtitles>Get to know me!</Subtitles>

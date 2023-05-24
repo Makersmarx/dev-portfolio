@@ -8,7 +8,7 @@ function Intro(){
         <Panel id='intro' className="bg-[url('https://img.freepik.com/free-vector/elegant-white-wallpaper-with-golden-details_23-2149095007.jpg?w=2000')] bg-no-repeat bg-cover bg-center bg-fixed">
             <h1 className="text-3xl md:text-5xl font-bold text-center pt-32 tracking-widest">HEY, THIS IS US</h1>
             <div className="flex justify-center text-center flex-col pb-36">
-                <h2 className='text-2xl p-24'>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product. </h2>
+                <h2 className='text-lg md:text-2xl p-24 lg:ml-46 lg:mr-46 xl:ml-56 xl:mr-56'>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product. </h2>
                 <Link 
                 to='projects' 
                 smooth={true} 

@@ -29,7 +29,7 @@ function Contact(){
     return (
         <Panel className='bg-gray-50 flex flex-col justify-center place-content-center'>
             <SectionTitles>CONTACT</SectionTitles>
-                <Info className='flex justify-center text-center'>{contactIntro}</Info> 
+                <Info className='flex justify-center text-center ml-10 mr-10 md:text-xl md:ml-56 md:mr-56'>{contactIntro}</Info> 
                 <Card className='bg-white rounded-lg md:translate-x-2/4'>
                     <h1 className='tracking-widest text-lg p-2 font-bold'>NAME</h1>
                     <input
