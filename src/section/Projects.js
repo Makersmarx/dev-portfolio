@@ -24,6 +24,7 @@ function Projects(){
 
     return (
         <Panel>
+            <section id='projects'>
             <SectionTitles> MY PROJECTS </SectionTitles>
             <Info className='flex justify-center text-center'>{intro1}</Info>
             <div className='flex flex-row'>
@@ -40,7 +41,7 @@ function Projects(){
                     </Button>
                 </Card>
             </div>
-            
+           </section> 
         </Panel>
     )
 }
