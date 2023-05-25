@@ -8,7 +8,7 @@ function Card ({
 
     const containerClassNames = classNames(
         //Styling that will stay consistant
-        'w-full md:w-2/4 h-auto m-2 p-8',
+        'w-full md:w-2/4 h-auto m-2 p-8 dark:bg-slate-800 rounded-md',
         //Accounts for customization
         className
     );

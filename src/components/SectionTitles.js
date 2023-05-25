@@ -5,7 +5,7 @@ function SectionTitles({
     className, 
     ...rest}){
     const titleClassNames = classNames(
-            'text-3xl font-bold text-center m-2 pt-4 tracking-widest',
+            'text-3xl font-bold text-center pt-4 tracking-widest dark:text-indigo-500',
             className
     )
     const lineClassNames = classNames(
