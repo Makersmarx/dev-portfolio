@@ -6,7 +6,7 @@ function Panel({
     ...rest}){
         
     const panelClassNames = classNames(
-        'w-full h-fit',
+        'w-full h-fit ',
         className
     );
     return (
