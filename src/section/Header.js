@@ -4,25 +4,25 @@ import Panel from "../components/Panel";
 
 function Header (className){
     const navLinkStyling = classNames(
-        'block md:inline-block md:mr-4 hover:cursor-pointer hover:text-gray-500',
+        'block p-3 mr-5 md:inline-block md:p-5 hover:cursor-pointer hover:text-gray-500',
         className
     );
     
     const headerLogo = "https://s24193.pcdn.co/wp-content/uploads/2016/07/entity-women-that-did-ada-lovelace-1320x720.jpg"
     return(
-        <header className="flex mx-4 md:flex-row mx-12 my-5">
+        <header className="fixed top-0 left-0 w-full flex md:flex-row bg-white">
             <Panel>
-                <div className="flex md:flex-row justify-start md:space-x-8">
+                <div className="flex p-5 md:flex-row justify-start md:space-x-8 md:p-5">
                     <div className="flex items-center justify-center h-12 w-12 rounded-full overflow-hidden">
                         <img src={headerLogo} alt={headerLogo} className="h-full w-full object-cover"/>
                     </div>
-                    <span className="flex mx-5 whitespace-nowrap items-center font-bold md:space-x-8 dark:text-indigo-500">
+                    <span className="flex ml-5 whitespace-nowrap items-center font-bold md:space-x-8 dark:text-indigo-500">
                         Ada Lovelace
                     </span>
                 </div>
             </Panel>
             <Panel>
-                <nav>
+                <nav className="bg-white">
                     <ul className="flex flex-col whitespace-nowrap items-end md:flex-row justify-end text-sm font-bold md:space-x-8 md:m-2 md:pt-2 tracking-wide dark:text-indigo-500">
                         <li>
                         <Link
