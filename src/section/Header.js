@@ -1,36 +1,32 @@
 import classNames from "classnames";
 import { Link } from 'react-scroll';
-import Panel from "./Panel";
+import Panel from "../components/Panel";
 
-function Header (){
+function Header (className){
+    const navLinkStyling = classNames(
+        'block md:inline-block md:mr-4 hover:cursor-pointer hover:text-gray-500',
+        className
+    );
     
     const headerLogo = "https://s24193.pcdn.co/wp-content/uploads/2016/07/entity-women-that-did-ada-lovelace-1320x720.jpg"
     return(
-        <header className="flex md:flex-row mx-12 my-5">
+        <header className="flex mx-4 md:flex-row mx-12 my-5">
             <Panel>
                 <div className="flex md:flex-row justify-start md:space-x-8">
                     <div className="flex items-center justify-center h-12 w-12 rounded-full overflow-hidden">
                         <img src={headerLogo} alt={headerLogo} className="h-full w-full object-cover"/>
                     </div>
-                    <span className="flex items-center justify-center font-bold dark:text-indigo-500">
+                    <span className="flex mx-5 whitespace-nowrap items-center font-bold md:space-x-8 dark:text-indigo-500">
                         Ada Lovelace
                     </span>
                 </div>
             </Panel>
             <Panel>
                 <nav>
-                    <ul className="flex md:flex-row justify-end text-sm font-bold hover:cursor-pointer md:space-x-8 md:m-2 md:pt-2 tracking-wide dark:text-indigo-500">
+                    <ul className="flex flex-col whitespace-nowrap items-end md:flex-row justify-end text-sm font-bold md:space-x-8 md:m-2 md:pt-2 tracking-wide dark:text-indigo-500">
                         <li>
-                            <Link 
-                            to='intro' 
-                            smooth={true} 
-                            duration={500}
-                            >
-                            HOME
-                            </Link>
-                        </li>
-                        <li>
-                        <Link 
+                        <Link
+                            className={navLinkStyling}
                             to='about me' 
                             smooth={true} 
                             duration={500}
@@ -40,6 +36,7 @@ function Header (){
                         </li>
                         <li>
                             <Link 
+                            className={navLinkStyling}
                             to='projects' 
                             smooth={true} 
                             duration={500}
@@ -49,6 +46,7 @@ function Header (){
                         </li>
                         <li>
                             <Link 
+                            className={navLinkStyling}
                             to='contact' 
                             smooth={true} 
                             duration={500}
@@ -57,7 +55,8 @@ function Header (){
                             </Link>
                         </li>
                         <li>
-                            <Link 
+                            <Link
+                            className={navLinkStyling}
                             to='testimonials' 
                             smooth={true} 
                             duration={500}
