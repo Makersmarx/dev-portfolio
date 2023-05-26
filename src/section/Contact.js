@@ -28,26 +28,29 @@ function Contact(){
 
     return (
         <Panel className='bg-gray-50 flex flex-col justify-center place-content-center dark:bg-black'>
-            <SectionTitles>CONTACT</SectionTitles>
-                <Info className='flex justify-center text-center ml-10 mr-10 md:text-xl md:ml-56 md:mr-56'>{contactIntro}</Info> 
-                <Card className='bg-white rounded-lg md:translate-x-2/4 dark:bg-slate-500'>
-                    <h1 className='tracking-widest text-lg p-2 font-bold dark:text-indigo-500'>NAME</h1>
-                    <input
-                    placeholder="Enter Your Name "
-                    onChange={(e)=>setName(e.target.value)}
-                    className='bg-slate-100 w-11/12 h-12 rounded-lg p-4 tracking-widest hover:ring hover:ring-amber-100 focus:outline-none focus:ring focus:ring-amber-300 dark:bg-black dark:focus:ring-indigo-500 dark:text-slate-400' />
-                     <h1 className='tracking-widest text-lg p-2 font-bold dark:text-indigo-500'>EMAIL</h1>
-                    <input
-                    placeholder="Enter Your Email "
-                    onChange={(e)=>setEmail(e.target.value)}
-                    className='bg-slate-100 w-11/12 h-12 rounded-lg p-4 tracking-widest hover:ring hover:ring-amber-100 focus:outline-none focus:ring focus:ring-amber-300 dark:bg-black dark:focus:ring-indigo-500 dark:text-slate-400' />
-                    <h1 className='tracking-widest text-lg p-2 font-bold dark:text-indigo-500'>MESSAGE</h1>
-                    <textarea
-                    placeholder="Enter Your Message "
-                    onChange={(e)=>setMessage(e.target.value)}
-                    className='block p-2.5 bg-slate-100 w-11/12 h-56 rounded-lg p-4 tracking-widest hover:ring hover:ring-amber-100 focus:outline-none focus:ring focus:ring-amber-300 dark:bg-black dark:focus:ring-indigo-500 dark:text-slate-400' />
-                    <Button onClick={sendMessage}>SUBMIT</Button>
-                </Card>
+            <section id="contact">
+                <SectionTitles>CONTACT</SectionTitles>
+                    <Info className='flex justify-center text-center ml-10 mr-10 md:text-xl md:ml-56 md:mr-56'>{contactIntro}</Info> 
+                    <Card className='bg-white rounded-lg md:translate-x-2/4 dark:bg-slate-500'>
+                        <h1 className='tracking-widest text-lg p-2 font-bold dark:text-indigo-500'>NAME</h1>
+                        <input
+                        placeholder="Enter Your Name "
+                        onChange={(e)=>setName(e.target.value)}
+                        className='bg-slate-100 w-11/12 h-12 rounded-lg p-4 tracking-widest hover:ring hover:ring-amber-100 focus:outline-none focus:ring focus:ring-amber-300 dark:bg-black dark:focus:ring-indigo-500 dark:text-slate-400' />
+                        <h1 className='tracking-widest text-lg p-2 font-bold dark:text-indigo-500'>EMAIL</h1>
+                        <input
+                        placeholder="Enter Your Email "
+                        onChange={(e)=>setEmail(e.target.value)}
+                        className='bg-slate-100 w-11/12 h-12 rounded-lg p-4 tracking-widest hover:ring hover:ring-amber-100 focus:outline-none focus:ring focus:ring-amber-300 dark:bg-black dark:focus:ring-indigo-500 dark:text-slate-400' />
+                        <h1 className='tracking-widest text-lg p-2 font-bold dark:text-indigo-500'>MESSAGE</h1>
+                        <textarea
+                        placeholder="Enter Your Message "
+                        onChange={(e)=>setMessage(e.target.value)}
+                        className='block p-2.5 bg-slate-100 w-11/12 h-56 rounded-lg p-4 tracking-widest hover:ring hover:ring-amber-100 focus:outline-none focus:ring focus:ring-amber-300 dark:bg-black dark:focus:ring-indigo-500 dark:text-slate-400' />
+                        <Button onClick={sendMessage}>SUBMIT</Button>
+                    </Card>
+            </section>
+            
         </Panel>
     )
 }

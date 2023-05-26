@@ -1,4 +1,4 @@
-
+import Header from "./components/Header";
 import Intro from "./section/Intro";
 import AboutMe from "./section/AboutMe";
 import Contact from "./section/Contact";
@@ -8,6 +8,7 @@ import Testimonials from "./section/Testimonials";
 function App() {
   return (
     <div>
+      <Header/>
       <Intro/>
       <AboutMe/>
       <Projects/>

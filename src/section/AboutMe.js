@@ -14,19 +14,22 @@ import Subtitles from "../components/Subtitles";
     function AboutMe(){
     return(
         <Panel className='bg-gray-50 dark:bg-black'>
-            <SectionTitles>ABOUT ME</SectionTitles>
-            <Info className='flex justify-center text-center md:text-xl md:ml-46 md:mr-46 xl:ml-56 xl:mr-56'>{intro1}</Info>
-            <div className="flex flex-col md:flex-row">
-                <Card className=''>
-                    <Subtitles>Get to know me!</Subtitles>
-                    <Info>{paragraph1}</Info>
-                    <Info>{paragraph2}</Info>
-                    <Info>{paragraph3}</Info>
-                </Card>
-                <Card>
-                    <Skills/>
-                </Card>
-            </div>
+            <section id="about me">
+                <SectionTitles>ABOUT ME</SectionTitles>
+                <Info className='flex justify-center text-center md:text-xl md:ml-46 md:mr-46 xl:ml-56 xl:mr-56'>{intro1}</Info>
+                <div className="flex flex-col md:flex-row">
+                    <Card className=''>
+                        <Subtitles>Get to know me!</Subtitles>
+                        <Info>{paragraph1}</Info>
+                        <Info>{paragraph2}</Info>
+                        <Info>{paragraph3}</Info>
+                    </Card>
+                    <Card>
+                        <Skills/>
+                    </Card>
+                </div>
+            </section>
+            
         </Panel>
     )
 };
