@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 import Panel from "../components/Panel";
 
 function Header (className){
+
     const navLinkStyling = classNames(
         'block p-3 mr-5 md:inline-block md:p-5 hover:cursor-pointer hover:text-gray-500',
         className
