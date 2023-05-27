@@ -11,7 +11,7 @@ function Header (className){
     
     const headerLogo = "https://s24193.pcdn.co/wp-content/uploads/2016/07/entity-women-that-did-ada-lovelace-1320x720.jpg"
     return(
-        <header className="fixed top-0 left-0 w-full flex md:flex-row bg-white">
+        <header className="fixed top-0 left-0 w-full flex md:flex-row bg-white dark:bg-slate-900">
             <Panel>
                 <div className="flex p-5 md:flex-row justify-start md:space-x-8 md:p-5">
                     <div className="flex items-center justify-center h-12 w-12 rounded-full overflow-hidden">
@@ -24,7 +24,7 @@ function Header (className){
             </Panel>
             <Panel>
                 <nav className="bg-white">
-                    <ul className="flex flex-col whitespace-nowrap items-end md:flex-row justify-end text-sm font-bold md:space-x-8 md:m-2 md:pt-2 tracking-wide dark:text-indigo-500">
+                    <ul className="flex flex-col whitespace-nowrap items-end md:flex-row justify-end text-sm font-bold md:space-x-8 md:m-2 md:pt-2 tracking-wide dark:text-indigo-500 dark:bg-slate-900 dark:md:m-0">
                         <li>
                         <Link
                             className={navLinkStyling}
