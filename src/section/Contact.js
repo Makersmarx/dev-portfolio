@@ -27,7 +27,8 @@ function Contact(){
     }
 
     return (
-        <Panel className='bg-gray-50 flex flex-col justify-center place-content-center dark:bg-black pb-8'>
+        <Panel className='relative bg-gray-50 flex flex-col justify-center place-content-center dark:bg-black pb-8'>
+            <div id="contact-anchor" className="anchor"></div>
             <section id="contact">
                 <SectionTitles>CONTACT</SectionTitles>
                     <Info className='flex justify-center text-center ml-10 mr-10 md:text-xl md:ml-56 md:mr-56'>{contactIntro}</Info> 

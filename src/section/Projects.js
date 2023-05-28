@@ -23,8 +23,8 @@ function Projects(){
     const hyperlink ='https://hips.hearstapps.com/hmg-prod/images/cute-cat-photos-1593441022.jpg?crop=1.00xw:0.753xh;0,0.153xh&resize=1200:*'
 
     return (
-        <Panel className='bg-white dark:bg-black'>
-            <section id='projects'>
+        <Panel className='relative bg-white dark:bg-black'>
+            <div id="projects-anchor" className="anchor"></div>
             <SectionTitles> MY PROJECTS </SectionTitles>
             <Info className='flex justify-center text-center ml-10 mr-10 md:text-xl md:ml-46 md:mr-46 xl:ml-56 xl:mr-56 '>{intro1}</Info>
             <div className='flex flex-col md:flex-row justify-center'>
@@ -41,7 +41,6 @@ function Projects(){
                     </Button>
                 </Card>
             </div>
-           </section> 
         </Panel>
     )
 }

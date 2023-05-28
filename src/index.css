@@ -17,3 +17,9 @@ button > svg {
     background-color: black;
    }
 }
+
+.anchor {
+    visibility: hidden;
+    position: absolute;
+    top: -64px;
+}

@@ -26,7 +26,7 @@ function Header (className){
     );
        
     return(
-        <header className="fixed md:items-center flex-col top-0 left-0 w-full flex md:flex-row bg-white dark:bg-slate-900">
+        <header className="fixed md:items-center flex-col top-0 left-0 w-full flex md:flex-row bg-white dark:bg-slate-900 z-10">
             <Panel>
                 <div className="flex p-5 md:flex-row justify-start md:p-3">
                     <div className="flex items-center justify-center h-10 w-10 rounded-full overflow-hidden">
@@ -49,7 +49,7 @@ function Header (className){
                         <div className={menuUnderlineClassNames}/>
                         <Link
                             className={navLinkStylingClassNames}
-                            to='about me' 
+                            to='about-me-anchor' 
                             smooth={true} 
                             duration={500}
                             >
@@ -60,7 +60,7 @@ function Header (className){
                         <li>
                             <Link 
                             className={navLinkStylingClassNames}
-                            to='projects' 
+                            to='projects-anchor' 
                             smooth={true} 
                             duration={500}
                             >
@@ -71,7 +71,7 @@ function Header (className){
                         <li>
                             <Link 
                             className={navLinkStylingClassNames}
-                            to='contact' 
+                            to='contact-anchor' 
                             smooth={true} 
                             duration={500}
                             >
@@ -82,7 +82,7 @@ function Header (className){
                         <li>
                             <Link
                             className={navLinkStylingClassNames}
-                            to='testimonials' 
+                            to='testimonials-anchor' 
                             smooth={true} 
                             duration={500}
                             >

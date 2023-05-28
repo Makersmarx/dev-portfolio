@@ -13,10 +13,10 @@ import Subtitles from "../components/Subtitles";
 
     function AboutMe(){
     return(
-        <Panel className='bg-gray-50 dark:bg-black'>
-            <section id="about me">
+        <Panel className="relative bg-gray-50 dark:bg-black">
+            <div id="about-me-anchor" className="anchor"></div>
                 <SectionTitles>ABOUT ME</SectionTitles>
-                <Info className='flex justify-center text-center md:text-xl md:ml-46 md:mr-46 xl:ml-56 xl:mr-56'>{intro1}</Info>
+                <Info className="flex justify-center text-center md:text-xl md:ml-46 md:mr-46 xl:ml-56 xl:mr-56">{intro1}</Info>
                 <div className="flex flex-col md:flex-row justify-center">
                     <Card className=''>
                         <Subtitles>Get to know me!</Subtitles>
@@ -27,9 +27,7 @@ import Subtitles from "../components/Subtitles";
                     <Card>
                         <Skills/>
                     </Card>
-                </div>
-            </section>
-            
+            </div>
         </Panel>
     )
 };
