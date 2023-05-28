@@ -40,7 +40,7 @@ function Footer () {
             <Panel>
                 <div className="border-t border-gray-300 dark:border-cyan-500"></div>
                 <div className="flex justify-center py-6 px-2">
-                    <div className="w-4 h-4 rounded-full bg-black border border-white dark:border-indigo-500 flex justify-center items-center">
+                    <div className="w-4 h-4 rounded-full bg-black border border-white flex justify-center items-center dark:border-indigo-500 dark:bg-slate-900 ">
                         <span className="text-white text-base dark:text-indigo-500">C</span>
                     </div>
                     <div className="text-xs text-white pl-2 flex items-center dark:text-indigo-500">Copy Right {currentYear}. Made by {feDevName}.</div>
