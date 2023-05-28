@@ -34,8 +34,8 @@ function ImageSlider(){
             <div key={currentTestimonialIndx} className='flex place-content-around'>
                 <HiChevronDoubleLeft onClick={prev} className='text-3xl md:text-4xl md:mt-8 dark:text-cyan-400'/>
                 <div className='flex flex-col md:flex-row justify-center items-center w-8/12 mb-8 drop-shadow-lg bg-gray-50 rounded-md md:rounded-full md:p-4 dark:bg-slate-800 dark:text-slate-400 dark:border dark:border-cyan-500'>
-                  <img src={currentTestimonial.image} alt={currentTestimonial.name} className="rounded-full w-24" />
-                  <p className="text-left ml-8 text-ellipsis ">{currentTestimonial.quote}</p>  
+                  <img src={currentTestimonial.image} alt={currentTestimonial.name} className="rounded-full w-24 h-24 object-cover" />
+                  <p className="text-left ml-8 mr-8 text-ellipsis ">{currentTestimonial.quote}</p>  
                 </div>
                 
                 <HiChevronDoubleRight onClick={next} className='text-3xl md:text-4xl md:mt-8 dark:text-cyan-400'/>
