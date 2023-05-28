@@ -24,7 +24,7 @@ function Footer () {
         <footer className="flex flex-col bg-black py-6 px-2 dark:bg-slate-900">
             <Panel>
                 <div className="flex flex-col md:flex-row justify-center">
-                    <Card className="md:order-last p-2 text-white justify-end">
+                    <div className="w-11/12 ml-6 md:w-4/12 md:-ml-0 h-auto m-2 p-8 md:order-last p-2 text-white justify-end">
                         <h1 className="text-lg py-6 text-white font-bold dark:text-indigo-500 md:flex md:justify-end md:mr-8">SOCIAL</h1>
                         <div className="flex md:justify-end">
                                 <Anchor className="pr-6 focus:ring-0" href={hyperlinkToRender(hyperlink)[0]}><FaLinkedin size={24}/></Anchor>
@@ -32,11 +32,11 @@ function Footer () {
                                 <Anchor className="pr-6 focus:ring-0" href={hyperlinkToRender(hyperlink)[2]}><FaTwitter size={24}/></Anchor>
                                 <Anchor className="pr-6 focus:ring-0" href={hyperlinkToRender(hyperlink)[3]}><FaYoutube size={24}/></Anchor>
                         </div>
-                    </Card>
-                    <Card className="text-white p-2">
+                    </div>
+                    <div className="text-white p-2 w-11/12 ml-6 md:w-4/12 md:-ml-0 h-auto m-2 p-8">
                         <h1 className="text-lg py-6 text-white font-bold dark:text-indigo-500" >{feDevName.toUpperCase()}</h1>
                         <p className="text-sm pb-12 dark:text-slate-400">A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product. </p>
-                    </Card>
+                    </div>
                 </div>
             </Panel>
             <Panel>
