@@ -6,7 +6,7 @@ import SectionTitles from "../components/SectionTitles";
 
 function Testimonials (){
     return (
-        <Panel className='dark:bg-black'>
+        <Panel className='bg-white dark:bg-black'>
             <section id='testimonials'>
             <SectionTitles> TESTIMONIALS</SectionTitles>
                <ImageSlider />
