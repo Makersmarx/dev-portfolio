@@ -68,10 +68,10 @@ const hyperlinkToRender = (hyperlink) => {
                         </Link>
                         <div className='flex justify-center'>
                             <DarkModeSwitch
-                            className='w-8 h-8 m-24 p-2 border border-amber-300 text-amber-300 rounded-full dark:border-indigo-500 dark:text-indigo-500'
+                            className='w-8 h-8 m-24 p-2 border-2 border-amber-300 text-amber-300 rounded-full bg-white dark:bg-slate-900 dark:border-indigo-500 dark:text-indigo-500'
                             checked={isDarkMode}
                             onChange={toggleDarkMode}
-                            size={120}
+                            size={120}x
                             />
                         </div> 
                         </div>
