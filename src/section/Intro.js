@@ -1,9 +1,15 @@
 import Panel from "../components/Panel"
 import Button from "../components/Button";
 import { Link } from 'react-scroll';
+import { useState } from 'react';
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 function Intro(){
-    
+    const [isDarkMode, setDarkMode] = useState(false);
+
+    const toggleDarkMode = (checked) => {
+    setDarkMode(checked);
+  };
     return (
         <Panel id='intro' className="bg-[url('https://img.freepik.com/free-vector/elegant-white-wallpaper-with-golden-details_23-2149095007.jpg?w=2000')]  dark:bg-[url('https://i.etsystatic.com/42026790/r/il/e29cf9/4842908763/il_fullxfull.4842908763_m1b3.jpg')] bg-no-repeat bg-cover bg-center bg-fixed ">
             <section id="home">
@@ -17,6 +23,12 @@ function Intro(){
                     >
                     <Button>PROJECTS</Button>
                     </Link>
+                    <DarkModeSwitch
+                    className='w-8'
+                    checked={isDarkMode}
+                    onChange={toggleDarkMode}
+                    size={120}
+                    />
                 </div>
             </section>
         </Panel>

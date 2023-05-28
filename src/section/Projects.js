@@ -27,7 +27,7 @@ function Projects(){
             <section id='projects'>
             <SectionTitles> MY PROJECTS </SectionTitles>
             <Info className='flex justify-center text-center ml-10 mr-10 md:text-xl md:ml-46 md:mr-46 xl:ml-56 xl:mr-56 '>{intro1}</Info>
-            <div className='flex flex-col md:flex-row'>
+            <div className='flex flex-col md:flex-row justify-center'>
                 <Card>
                     <Media alt='cute kitten' src={media}/>
                 </Card>
