@@ -31,7 +31,7 @@ function Contact(){
             <section id="contact">
                 <SectionTitles>CONTACT</SectionTitles>
                     <Info className='flex justify-center text-center ml-10 mr-10 md:text-xl md:ml-56 md:mr-56'>{contactIntro}</Info> 
-                    <Card className='bg-white rounded-lg md:translate-x-full dark:bg-slate-500 '>
+                    <Card className='bg-white rounded-lg md:translate-x-full dark:bg-slate-500 pl-16'>
                         <h1 className='tracking-widest text-lg p-2 font-bold dark:text-indigo-500'>NAME</h1>
                         <input
                         placeholder="Enter Your Name "

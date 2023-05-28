@@ -1,15 +1,38 @@
 import Panel from "../components/Panel"
 import Button from "../components/Button";
 import { Link } from 'react-scroll';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 function Intro(){
     const [isDarkMode, setDarkMode] = useState(false);
 
-    const toggleDarkMode = (checked) => {
-    setDarkMode(checked);
+  useEffect(() => {
+    const storedTheme = localStorage.getItem('theme');
+
+    if (storedTheme === 'dark' || (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+      setDarkMode(true);
+    } else {
+      document.documentElement.classList.remove('dark');
+      setDarkMode(false);
+    }
+  }, []);
+
+  const toggleDarkMode = () => {
+    const newDarkMode = !isDarkMode;
+
+    if (newDarkMode) {
+      localStorage.setItem('theme', 'dark');
+      document.documentElement.classList.add('dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+      document.documentElement.classList.remove('dark');
+    }
+
+    setDarkMode(newDarkMode);
   };
+
     return (
         <Panel id='intro' className="bg-[url('https://img.freepik.com/free-vector/elegant-white-wallpaper-with-golden-details_23-2149095007.jpg?w=2000')]  dark:bg-[url('https://i.etsystatic.com/42026790/r/il/e29cf9/4842908763/il_fullxfull.4842908763_m1b3.jpg')] bg-no-repeat bg-cover bg-center bg-fixed ">
             <section id="home">
@@ -23,12 +46,15 @@ function Intro(){
                     >
                     <Button>PROJECTS</Button>
                     </Link>
-                    <DarkModeSwitch
-                    className='w-8'
-                    checked={isDarkMode}
-                    onChange={toggleDarkMode}
-                    size={120}
-                    />
+                    <di className='flex justify-center'>
+                        <DarkModeSwitch
+                        className='w-8 h-8 m-24 p-2 border border-amber-300 text-amber-300 rounded-full dark:border-indigo-500 dark:text-indigo-500'
+                        checked={isDarkMode}
+                        onChange={toggleDarkMode}
+                        size={120}
+                        />
+                    </di>
+                    
                 </div>
             </section>
         </Panel>
