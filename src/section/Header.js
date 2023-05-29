@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 import { HiMenu, HiX } from "react-icons/hi";
 import { useState } from "react";
 import Panel from "../components/Panel";
+import Skeleton from "../components/Skeleton";
 
 
 function Header (className){
