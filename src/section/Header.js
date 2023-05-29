@@ -3,10 +3,9 @@ import { Link } from 'react-scroll';
 import { HiMenu, HiX } from "react-icons/hi";
 import { useState } from "react";
 import Panel from "../components/Panel";
-import Skeleton from "../components/Skeleton";
 
 
-function Header (className){
+function Header ({ className }){
     let [open, setOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -27,7 +26,7 @@ function Header (className){
     );
        
     return(
-        <header className="fixed md:items-center flex-col top-0 left-0 w-full flex md:flex-row bg-white dark:bg-slate-900 z-10">
+        <header className={`fixed md:items-center flex-col top-0 left-0 w-full flex md:flex-row bg-white dark:bg-slate-900 z-10 transition-all duration-500 ease-in-out ${className} `}>
             <Panel>
                 <div className="flex p-5 md:flex-row justify-start md:p-3">
                     <div className="flex items-center justify-center h-10 w-10 rounded-full overflow-hidden">
@@ -44,7 +43,7 @@ function Header (className){
             </div>
             
             <Panel>
-                <nav className="bg-white">
+                <nav className={`bg-white transition-all duration-500 ${open ? 'top-20' : 'top-[-410px]'}`}>
                 <ul className={`md:flex md:pb-0 md:p md:justify-end bg-white absolute md:static md:whitespace-nowrap dark:bg-slate-900 md:z-auto z-[-1] left-0 w-full md:w-auto pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-410px]'}`}>
                         <li>
                         <div className={menuUnderlineClassNames}/>
