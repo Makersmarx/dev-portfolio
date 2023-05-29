@@ -28,7 +28,7 @@ function ImageSlider(){
         setCurrentTestimonialIndx(newIndx);
     };
     const currentTestimonial = testimonials[currentTestimonialIndx];
-
+    
     return (
         <div className='relative'>
             <div key={currentTestimonialIndx} className='flex place-content-around'>

@@ -8,7 +8,13 @@ function Media({
     ...rest
 }){
     const finalMediaClassNames = classNames(
-        'w-11/12 max-w-xl md:mt-16 rounded-lg border border-8 border-amber-300 dark:border-indigo-500 drop-shadow-lg',
+        //Base Styling
+        'w-11/12 max-w-xl rounded-lg border border-8 border-amber-300 drop-shadow-lg',
+        //Media Queries
+         'md:mt-16',
+        //Dark Mode  
+         'dark:border-indigo-500',
+         //Accounts for customization
         className
     )
     const isVideo = src.endsWith('.mp4') || src.endsWith('.webm') || src.endsWith('.ogg') || src.endsWith('.MOV');

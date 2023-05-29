@@ -2,6 +2,7 @@ import classNames from 'classnames';
 
 function Skeleton({ times, className }) {
     const outerClassNames = classNames(
+        //Base Styling
         'relative', 
         'overflow-hidden',
         'bg-gray-200',
