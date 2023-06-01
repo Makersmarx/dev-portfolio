@@ -10,6 +10,7 @@ function Header ({ className }){
 
     const toggleMenu = () => {
         setOpen(!open);
+
     };
 
     const feDevName = "Ada Lovelace"
@@ -39,7 +40,7 @@ function Header ({ className }){
             </Panel>
 
             <div onClick={toggleMenu} className="text-3xl absolute right-5 top-6 cursor-pointer md:hidden dark:text-indigo-500 bg-white dark:bg-slate-900">
-                {open ? <HiX className=""/> : <HiMenu className="" />}
+                {open ? <HiX /> : <HiMenu />}
             </div>
             
             <Panel>
@@ -52,6 +53,7 @@ function Header ({ className }){
                             to='about-me-anchor' 
                             smooth={true} 
                             duration={500}
+                            onClick={toggleMenu}
                             >
                             ABOUT ME
                             </Link>
@@ -63,6 +65,7 @@ function Header ({ className }){
                             to='projects-anchor' 
                             smooth={true} 
                             duration={500}
+                            onClick={toggleMenu}
                             >
                             PROJECTS
                             </Link>
@@ -74,6 +77,7 @@ function Header ({ className }){
                             to='contact-anchor' 
                             smooth={true} 
                             duration={500}
+                            onClick={toggleMenu}
                             >
                             CONTACT
                             </Link>
@@ -85,6 +89,7 @@ function Header ({ className }){
                             to='testimonials-anchor' 
                             smooth={true} 
                             duration={500}
+                            onClick={toggleMenu}
                             >
                             TESTIMONIALS
                             </Link>
