@@ -1,4 +1,3 @@
-import Card from "../components/Card";
 import ImageSlider from "../components/ImageSlider";
 import Panel from "../components/Panel";
 import SectionTitles from "../components/SectionTitles";
